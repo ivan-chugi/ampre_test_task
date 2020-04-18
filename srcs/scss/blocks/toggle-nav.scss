@@ -1,0 +1,76 @@
+.toggle-nav {
+    width: 39px;
+    height: 26px;
+
+    // transition: all 300ms ease-in-out;
+
+    position: relative;
+}
+
+.toggle-nav__checkbox {
+    width: 170%;
+    height: 170%;
+    margin: 0;
+
+    position: absolute;
+    top: -5px;
+    left: -11px;
+    z-index: 10;
+
+    opacity: 0;
+    cursor: pointer;
+
+    &:checked {
+        + span {
+            background: transparent;
+            left: 0;
+
+            &:before {
+                transform: rotate(-45deg) translate(-7px, 10px);
+                left: -3px;
+                top: -12px;
+            }
+
+            &:after {
+                transform: rotate(45deg) translate(-6px, -8px);
+                left: -2px;
+                top: 10px;
+            }
+        }
+    }
+}
+
+.toggle-nav__icon {
+    width: 100%;
+    height: 4px;
+    margin: 11px 0;
+
+    position: absolute;
+    transition: all 0.1s;
+    z-index: 5;
+
+    background-color: rgba(255, 255, 255, 1);
+
+    &::before, &::after {
+        content: "";
+        width: 100%;
+        height: 4px;
+
+        position: absolute;
+        top: -11px;
+        transition: all 0.3s;
+
+        background-color: rgba(255, 255, 255, 1);
+    }
+
+    &::after {
+        top: 11px;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .toggle-nav {
+        position: absolute;
+        right: 0;
+    }
+}

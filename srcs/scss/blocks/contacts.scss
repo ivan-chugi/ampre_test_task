@@ -1,0 +1,26 @@
+.contacts {
+    // z-index: 1;
+}
+
+.contacts-list {
+    @include list-reset;
+}
+
+.contacts-list__item {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 1);
+
+    &--icon-phone {
+        display: none;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .contacts-list__item {
+        &--icon-phone {
+            display: block;
+        }
+    }
+}

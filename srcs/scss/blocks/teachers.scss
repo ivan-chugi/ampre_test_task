@@ -1,0 +1,23 @@
+.teachers__link {
+    @include link-reset;
+    width: 200px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    color: $white;
+
+    border: 2px solid $orange;
+    border-radius: 4px;
+
+    &:hover {
+        background-color: $orange;
+    }
+}

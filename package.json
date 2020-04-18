@@ -1,0 +1,19 @@
+{
+  "name": "ampre_test_task",
+  "version": "1.0.0",
+  "description": "Test task for Ampre online educational platform",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ivan Chugunov",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "gulp-sass": "^4.0.2",
+    "swiper": "^5.3.7"
+  }
+}

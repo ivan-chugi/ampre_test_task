@@ -1,0 +1,38 @@
+.wrapper {
+    width: 320px;
+    margin: 0 auto;
+    padding: 0 8px;
+
+    display: flex;
+
+    &--header {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &--vertical {
+        flex-direction: column;
+    }
+
+    &--heading-main {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &--programms {
+        justify-content: center;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .wrapper {
+        width: $tablet-width;
+        padding: 0 36px;
+
+        &--header {
+            justify-content: flex-start;
+            // position: ;
+        }
+    }
+}
