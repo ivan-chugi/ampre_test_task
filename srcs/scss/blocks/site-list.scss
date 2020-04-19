@@ -73,6 +73,10 @@
         &:hover, &:FOCUS {
             border-bottom: 2px solid $orange;
         }
+
+        &:hover {
+            opacity: 1;
+        }
     }
 }
 
