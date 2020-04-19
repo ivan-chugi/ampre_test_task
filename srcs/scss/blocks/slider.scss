@@ -5,10 +5,20 @@
 }
 
 .swiper-slide {
-    background-position: center;
-    background-size: cover;
     width: 261px;
     height: 450px;
+
+    background-position: top;
+    &:first-child {
+        background-position: center;
+        background-size: 145%;
+        background-position-y: 0;
+        background-position-x: -80px;
+    }
+
+    &:last-child {
+        background-position-y: -40px;
+    }
 }
 
 @media (min-width: $tablet-width) {
@@ -16,8 +26,6 @@
         width: 952px;
         margin: 0 auto;
         padding-top: 84px;
-
-        // cursor: ;
     }
 
     .swiper-wrapper {
@@ -29,7 +37,33 @@
         width: 304px;
         height: 450px;
 
-
+        &:first-child {
+            background-size: 120%;
+            background-position-y: 0;
+            background-position-x: -40px;
+        }   
     }
-        
+}
+
+@media (min-width: $desktop-width) {
+    .swiper-container {
+        width: 1280px;
+        padding-top: 104px;
+    }
+
+    .swiper-slide {
+        width: 414px;
+        height: 450px;
+
+        background-position: top;
+
+        &:first-child {
+            background-size: 110%;
+            background-position-x: -40px;
+        }
+
+        &:last-child {
+            background-position-y: -40px;
+        }
+    }
 }

@@ -28,7 +28,12 @@
         &--header {
             justify-content: flex-start;
         }
+    }
+}
 
-
+@media (min-width: $desktop-width) {
+    .wrapper {
+        width: $desktop-width;
+        padding: 0 80px;
     }
 }

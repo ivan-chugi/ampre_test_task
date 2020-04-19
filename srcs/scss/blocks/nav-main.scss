@@ -59,9 +59,41 @@
         margin-bottom: 48px;
     }
 
+    .nav-main__user-list {
+        position: absolute;
+        right: -35px;
+        top: 59px;
+    }
+
     .nav-main__teachers {
         position: absolute;
         top: -7px;
         right: 37px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .nav-main {
+        margin-bottom: 7px;
+    }
+
+    .nav-main__wrapper {
+        padding-left: 0;
+
+        left: 41px;
+
+        letter-spacing: 0.29px;
+
+        justify-content: flex-start;
+    }
+
+    .nav-main__teachers {
+        top: -9px;
+        right: -56px;
+    }
+
+    .nav-main__user-list {
+        right: -253px;
+        top: 0;
     }
 }

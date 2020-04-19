@@ -26,13 +26,6 @@
     }
 }
 
-.logo__link {
-    // width: 100px;
-    // height: 100px;
-
-    // position: absolute;
-}
-
 @media (min-width: $tablet-width) {
     .logo {
         width: 108px;
@@ -49,9 +42,16 @@
         display: none;
 
         &--tab {
-            // position: static;
-            // left: 0;
             display: block;
         }
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .logo {
+        width: 111px;
+        height: 111px;
+
+        background-image: url("../img/logo-desktop.png");
     }
 }

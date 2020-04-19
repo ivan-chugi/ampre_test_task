@@ -72,3 +72,12 @@
         letter-spacing: 0.05px;
     }
 }
+
+@media (min-width: $desktop-width) {
+    .teachers__link {
+        width: 200px;
+
+        font-size: 12px;
+        letter-spacing: 0.26px;
+    }
+}

@@ -1,22 +1,3 @@
-// if (window.innerWidth < 1024) {
-//     let swiper = new Swiper('.swiper-container', {
-//     effect: 'coverflow',
-//     grabCursor: true,
-//     centeredSlides: true,
-//     slidesPerView: 'auto',
-//     coverflowEffect: {
-//         rotate: 0,
-//         stretch: -32,
-//         depth: 140,
-//         modifier: 1,
-//         slideShadows : true,
-//     },
-//     // pagination: {
-//     //   el: '.swiper-pagination',
-//     // },
-//     });
-// }
-
 const breakpoint = window.matchMedia( '(min-width:64em)' );
 let mySwiper;
 
@@ -30,7 +11,7 @@ const breakpointChecker = function() {
     }
  };
 
- const enableSwiper = function() {
+const enableSwiper = function() {
     mySwiper = new Swiper ('.swiper-container', {
         effect: 'coverflow',
         grabCursor: true,
@@ -48,10 +29,9 @@ const breakpointChecker = function() {
  breakpoint.addListener(breakpointChecker);
  breakpointChecker();
 
-
 let burger = document.querySelector(".toggle-nav__checkbox");
 let menu = document.querySelector(".nav-main");
-let user_list = document.querySelector(".user-list");
+let user_list = document.querySelector(".nav-main__user-list");
 let delay = 600;
 
 burger.addEventListener("change", function() {
@@ -67,6 +47,6 @@ burger.addEventListener("change", function() {
         user_list.style.opacity = "0";
         setTimeout(function() {
             user_list.style.visibility = "hidden";
-          }, delay);
+        }, delay);
     }
 });

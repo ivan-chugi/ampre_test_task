@@ -24,5 +24,13 @@
         text-align: left;
         letter-spacing: 0.68px;
     }
+}
 
+@media (min-width: $desktop-width) {
+    .heading-main {
+        width: 630px;
+        font-size: 42px;
+        line-height: 48px;
+        letter-spacing: 1.2px;
+    }
 }

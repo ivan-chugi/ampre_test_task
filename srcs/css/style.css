@@ -62,6 +62,11 @@ body {
     .wrapper--header {
       justify-content: flex-start; } }
 
+@media (min-width: 1440px) {
+  .wrapper {
+    width: 1440px;
+    padding: 0 80px; } }
+
 .heading-main {
   margin: 0;
   padding: 0;
@@ -82,6 +87,13 @@ body {
     line-height: 42px;
     text-align: left;
     letter-spacing: 0.68px; } }
+
+@media (min-width: 1440px) {
+  .heading-main {
+    width: 630px;
+    font-size: 42px;
+    line-height: 48px;
+    letter-spacing: 1.2px; } }
 
 .header-main {
   margin-bottom: 55px;
@@ -133,11 +145,13 @@ body {
 .header-main__register-link {
   margin-bottom: 60px; }
 
+.header-main__scroll-info {
+  display: none; }
+
 @media (min-width: 1024px) {
   .header-main {
     margin-bottom: 111px;
     padding-bottom: 137px;
-    background-position-y: -10px;
     background-size: cover; }
     .header-main::before {
       content: "";
@@ -164,6 +178,42 @@ body {
     padding-left: 106px; }
   .header-main__register-link {
     margin-left: 106px; } }
+
+@media (min-width: 1440px) {
+  .header-main {
+    margin-bottom: 120px;
+    padding-bottom: 208px; }
+    .header-main::before {
+      bottom: 82px; }
+  .header-main__contacts {
+    margin-top: 42px;
+    margin-left: 41px; }
+  .header-main__toggle {
+    display: none; }
+  .header-main__wrapper--heading-main {
+    padding-left: 730px; }
+  .header-main__goods-description {
+    margin-top: 2px;
+    margin-bottom: 54px;
+    padding-left: 216px; }
+  .header-main__register-link {
+    margin-left: 217px; }
+  .header-main__scroll-info {
+    width: 140px;
+    height: 15px;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.6px;
+    display: block;
+    position: absolute;
+    bottom: 54px;
+    left: 50%;
+    transform: translateX(-70px); } }
 
 .site-list {
   list-style: none;
@@ -216,6 +266,10 @@ body {
     .site-list__link:hover, .site-list__link:FOCUS {
       border-bottom: 2px solid #fe8057; } }
 
+@media (min-width: 1440px) {
+  .site-list {
+    font-size: 16px; } }
+
 .user-list {
   list-style: none;
   margin: 0;
@@ -247,9 +301,6 @@ body {
     width: 164px;
     height: 111px;
     padding-left: 28px;
-    position: absolute;
-    right: -35px;
-    top: 59px;
     justify-content: center;
     align-items: flex-start;
     font-size: 14px;
@@ -266,6 +317,19 @@ body {
     .user-list__item:last-child {
       margin-left: 0;
       margin-bottom: 0; } }
+
+@media (min-width: 1440px) {
+  .user-list {
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 0;
+    flex-direction: row;
+    visibility: visible;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0); }
+  .user-list__item:first-child {
+    margin-right: 30px; } }
 
 .nav-main {
   padding-top: 142px;
@@ -313,10 +377,29 @@ body {
   .nav-main__site-list {
     margin-left: 81px;
     margin-bottom: 48px; }
+  .nav-main__user-list {
+    position: absolute;
+    right: -35px;
+    top: 59px; }
   .nav-main__teachers {
     position: absolute;
     top: -7px;
     right: 37px; } }
+
+@media (min-width: 1440px) {
+  .nav-main {
+    margin-bottom: 7px; }
+  .nav-main__wrapper {
+    padding-left: 0;
+    left: 41px;
+    letter-spacing: 0.29px;
+    justify-content: flex-start; }
+  .nav-main__teachers {
+    top: -9px;
+    right: -56px; }
+  .nav-main__user-list {
+    right: -253px;
+    top: 0; } }
 
 .logo {
   width: 88px;
@@ -349,6 +432,12 @@ body {
     .logo__img--tab {
       display: block; } }
 
+@media (min-width: 1440px) {
+  .logo {
+    width: 111px;
+    height: 111px;
+    background-image: url("../img/logo-desktop.png"); } }
+
 .contacts__list {
   list-style: none;
   margin: 0;
@@ -357,7 +446,7 @@ body {
 .contacts__list-item {
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 14px;
-  font-weight: 100;
+  font-weight: 400;
   color: white; }
   .contacts__list-item--icon-phone {
     display: none; }
@@ -378,7 +467,20 @@ body {
       position: absolute;
       top: 5px;
       left: -17px;
-      background-image: url(../../img/telefon-icon.png); } }
+      background-image: url("../img/telefon-icon.png"); } }
+
+@media (min-width: 1440px) {
+  .contacts__list {
+    width: 256px; }
+  .contacts__list-item {
+    font-size: 16px;
+    letter-spacing: 0.4px; }
+    .contacts__list-item--icon-phone {
+      padding-top: 2px;
+      display: block;
+      position: relative; }
+      .contacts__list-item--icon-phone::before {
+        left: -20px; } }
 
 .toggle-nav {
   width: 39px;
@@ -486,6 +588,12 @@ body {
     font-size: 10px;
     letter-spacing: 0.05px; } }
 
+@media (min-width: 1440px) {
+  .teachers__link {
+    width: 200px;
+    font-size: 12px;
+    letter-spacing: 0.26px; } }
+
 .goods-description__text {
   margin: 0;
   font-family: "Montserrat", "Arial", sans-serif;
@@ -503,6 +611,23 @@ body {
     line-height: 18px;
     text-align: left;
     letter-spacing: -0.6px; } }
+
+@media (min-width: 1440px) {
+  .goods-description {
+    position: relative; }
+    .goods-description::before {
+      content: "";
+      width: 179px;
+      height: 65px;
+      position: absolute;
+      top: -11px;
+      left: 19px;
+      background-image: url("../img/stars.png"); }
+  .goods-description__text {
+    width: 380px;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.68px; } }
 
 .register-link {
   width: 304px;
@@ -562,7 +687,7 @@ body {
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 500;
-  letter-spacing: 1.44px;
+  letter-spacing: 0.3px;
   color: #4e93e1;
   display: block; }
 
@@ -586,25 +711,38 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  .programms__background:hover {
+    height: 100%; }
+
+.programms__link:focus > div {
+  height: 100%; }
+
+.programms__link:focus > div > div {
+  opacity: 0.6; }
 
 .programms__name {
   width: 190px;
   margin-bottom: 6px;
   position: absolute;
-  bottom: 22px;
+  bottom: 27px;
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 20px;
   letter-spacing: 0.4px;
   color: white;
   text-align: center; }
+  .programms__name:hover, .programms__name:focus {
+    opacity: 0.6; }
 
 @media (min-width: 1024px) {
   .programms {
     display: flex;
     flex-direction: column;
     align-items: center; }
+  .programms__link {
+    height: 100%;
+    display: flex; }
   .programms__counter {
     width: 560px;
     height: 51px;
@@ -621,17 +759,32 @@ body {
     order: -1; }
   .programms__subheading {
     font-size: 24px;
-    letter-spacing: 2px; }
+    letter-spacing: 0.5px; }
   .programms__slider {
     width: 100%; }
   .programms__name {
     font-size: 20px;
-    line-height: 23px; }
-  .programms__background:hover {
-    height: 100%; } }
+    line-height: 23px;
+    bottom: 20px; } }
 
-.counter {
-  display: none; }
+@media (min-width: 1440px) {
+  .programms__counter {
+    width: 700px;
+    height: 61px;
+    margin-bottom: 139px;
+    padding-top: 15px;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 600; }
+  .programms__subheading {
+    font-size: 30px;
+    letter-spacing: 0.6px; }
+  .programms__name {
+    width: 237px;
+    bottom: 15px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px; } }
 
 .swiper-container {
   width: 320px;
@@ -639,10 +792,16 @@ body {
   padding-bottom: 50px; }
 
 .swiper-slide {
-  background-position: center;
-  background-size: cover;
   width: 261px;
-  height: 450px; }
+  height: 450px;
+  background-position: top; }
+  .swiper-slide:first-child {
+    background-position: center;
+    background-size: 145%;
+    background-position-y: 0;
+    background-position-x: -80px; }
+  .swiper-slide:last-child {
+    background-position-y: -40px; }
 
 @media (min-width: 1024px) {
   .swiper-container {
@@ -654,7 +813,25 @@ body {
     justify-content: space-between; }
   .swiper-slide {
     width: 304px;
-    height: 450px; } }
+    height: 450px; }
+    .swiper-slide:first-child {
+      background-size: 120%;
+      background-position-y: 0;
+      background-position-x: -40px; } }
+
+@media (min-width: 1440px) {
+  .swiper-container {
+    width: 1280px;
+    padding-top: 104px; }
+  .swiper-slide {
+    width: 414px;
+    height: 450px;
+    background-position: top; }
+    .swiper-slide:first-child {
+      background-size: 110%;
+      background-position-x: -40px; }
+    .swiper-slide:last-child {
+      background-position-y: -40px; } }
 
 .visually-hidden {
   position: absolute;

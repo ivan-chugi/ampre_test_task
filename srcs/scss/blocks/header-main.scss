@@ -21,7 +21,6 @@
         opacity: 0.4;
         background-color: rgba(0, 0, 0, 1);
         z-index: -1;
-
     }
 }
 
@@ -32,7 +31,6 @@
 
     position: relative;
 
-    
     &--heading-main {
         padding-top: 0;
         margin-bottom: 0;
@@ -66,15 +64,16 @@
     margin-bottom: 60px;
 }
 
+.header-main__scroll-info {
+    display: none;
+}
+
 @media (min-width: $tablet-width) {
     .header-main {
         margin-bottom: 111px;
         padding-bottom: 137px;
 
-        // background-position-x: 20px;
-        background-position-y: -10px;
         background-size: cover;
-        // background-size: 100%;
 
         &::before {
             content: "";
@@ -97,13 +96,13 @@
     }
 
     .header-main__wrapper {
-
         &--heading-main {
             margin-bottom: 37px;
             margin-top: 0;
             padding-left: 470px;
         }
     }
+
     .header-main__heading-main {
         margin-bottom: 37px;
         margin-top: 0;
@@ -117,5 +116,62 @@
 
     .header-main__register-link {
         margin-left: 106px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .header-main {
+        margin-bottom: 120px;
+        padding-bottom: 208px;
+
+        &::before {
+            bottom: 82px;
+        }
+    }
+
+    .header-main__contacts {
+        margin-top: 42px;
+        margin-left: 41px;
+    }
+
+    .header-main__toggle {
+        display: none;
+    }
+
+   
+    .header-main__wrapper {
+        &--heading-main {
+            padding-left: 730px;
+        }
+    }
+
+    .header-main__goods-description {
+        margin-top: 2px;
+        margin-bottom: 54px;
+        padding-left: 216px;
+    }
+
+    .header-main__register-link {
+        margin-left: 217px;
+    }
+
+    .header-main__scroll-info {
+        width: 140px;
+        height: 15px;
+
+        font-family: "Montserrat", "Arial", sans-serif;
+        font-size: 12px;
+        line-height: 24px;
+        font-weight: 600;
+        color: $white;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 0.6px;
+
+        display: block;
+        position: absolute;
+        bottom: 54px;
+        left: 50%;
+        transform: translateX(-70px);
     }
 }
