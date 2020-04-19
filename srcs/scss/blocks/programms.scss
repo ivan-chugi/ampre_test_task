@@ -43,6 +43,14 @@
     &:hover {
         height: 100%;
     }
+
+    &:hover > div {
+        visibility: hidden;
+    }
+
+    &:hover > div::after {
+        visibility: visible;
+    }
 }
 
 .programms__link {
@@ -71,8 +79,16 @@
 
     text-align: center;
 
-    &:hover, &:focus {
-        opacity: 0.6;
+    &::after {
+        content: "Подробнее о программе";
+        width: 185px;
+        height: 55px;
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        transform: translateX(-95px);
+
+        visibility: hidden;
     }
 }
 
@@ -121,6 +137,10 @@
         line-height: 23px;
         
         bottom: 20px;
+
+        &::after {
+            bottom: -9px;
+        }
     }
 }
 
@@ -149,5 +169,9 @@
         font-size: 24px;
         font-weight: 500;
         line-height: 29px;
+
+        &::after {
+            bottom: 3px;
+        }
     }
 }
