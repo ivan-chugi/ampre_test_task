@@ -264,9 +264,9 @@ body {
   .site-list__link {
     padding-bottom: 1px;
     padding-right: 1px; }
-    .site-list__link:hover, .site-list__link:FOCUS {
+    .site-list__link:hover, .site-list__link:focus {
       border-bottom: 2px solid #fe8057; }
-    .site-list__link:hover {
+    .site-list__link:hover, .site-list__link:focus {
       opacity: 1; } }
 
 @media (min-width: 1440px) {

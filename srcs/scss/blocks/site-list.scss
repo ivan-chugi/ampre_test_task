@@ -70,11 +70,11 @@
         padding-bottom: 1px;
         padding-right: 1px;
 
-        &:hover, &:FOCUS {
+        &:hover, &:focus {
             border-bottom: 2px solid $orange;
         }
 
-        &:hover {
+        &:hover, &:focus {
             opacity: 1;
         }
     }
