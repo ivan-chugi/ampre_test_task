@@ -15,6 +15,10 @@
     display: block;
 }
 
+.programms__counter {
+    display: none;
+}
+
 .programms__slider {
     width: 320px;
     margin: 0 auto;
@@ -22,17 +26,6 @@
 
 .programms_slide {
     position: relative;
-
-    // &::after {
-    //     content: "";
-    //     position: absolute;
-    //     bottom: 0;
-    //     width: 261px;
-    //     height: 30%;
-    //     background-color: black;
-
-    //     z-index: 1000;
-    // }
 }
 
 .programms__background {
@@ -49,8 +42,11 @@
 }
 
 .programms__name {
-    width: 140px;
+    width: 190px;
     margin-bottom: 6px;
+
+    position: absolute;
+    bottom: 22px;
 
     font-family: "Montserrat", "Arial", sans-serif;
     font-size: 18px;
@@ -60,5 +56,50 @@
     color: $white;
 
     text-align: center;
+}
 
+@media (min-width: $tablet-width) {
+    .programms {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .programms__counter {
+        width: 560px;
+        height: 51px;
+        padding-top: 10px;
+        margin-bottom: 107px;
+        
+        font-family: "Montserrat", "Arial", sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        color: $orange;
+        text-align: center;
+        border: 2px solid $orange;
+        border-radius: 50px;
+
+        display: block;
+        order: -1;
+    }
+
+    .programms__subheading {
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+
+    .programms__slider {
+        width: 100%;
+    }
+
+    .programms__name {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .programms__background {
+        &:hover {
+            height: 100%;
+        }
+    }
 }

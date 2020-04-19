@@ -1,0 +1,35 @@
+.swiper-container {
+    width: 320px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 261px;
+    height: 450px;
+}
+
+@media (min-width: $tablet-width) {
+    .swiper-container {
+        width: 952px;
+        margin: 0 auto;
+        padding-top: 84px;
+
+        // cursor: ;
+    }
+
+    .swiper-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .swiper-slide {
+        width: 304px;
+        height: 450px;
+
+
+    }
+        
+}

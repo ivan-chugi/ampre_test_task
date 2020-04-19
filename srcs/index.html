@@ -14,19 +14,17 @@
     <header class="header-main">
         <div class="wrapper wrapper--header header-main__wrapper ">
        
-                <div class="logo">
-                    <a href="#" class="logo__link">
+                <div class="logo" tabindex="1">
+                    <a href="#" class="logo__link" tabindex="-1">
                         <div class="logo__img">
-                            <span class="logo__alt visually-hidden">Логотип онлайн-платформы Ампре</span>
+                            <span class="logo__alt visually-hidden" tabindex="-1">Логотип онлайн-платформы Ампре</span>
                         </div>
-                        <!-- <img class="logo__img" src="img/logo-mob.png" width="88" height="88" alt="Логотип онлайн-платформы Ампре"> -->
-                        <!-- <img class="logo__img logo__img--tab" src="img/logo-tab.png" width="108" height="108" alt="Логотип онлайн-платформы Ампре"> -->
                     </a>
                 </div>
                 <div class="header-main__contacts contacts">
-                    <ul class="contacts-list">
-                        <li class="contacts-list__item">Москва</li>
-                        <li class="contacts-list__item contacts-list__item--icon-phone">+7 800-562-3452</li>
+                    <ul class="contacts__list" tabindex="-1">
+                        <li class="contacts__list-item">Москва</li>
+                        <li class="contacts__list-item contacts__list-item--icon-phone">+7 800-562-3452</li>
                     </ul>
                 </div>
                 <div class="header-main__toggle toggle-nav">
@@ -38,36 +36,36 @@
                 <div class="wrapper nav-main__wrapper">
                     <ul class="nav-main__site-list site-list">
                         <li class="site-list__item">
-                            <a href="" class="site-list__link">О проекте</a>
+                            <a href="" class="site-list__link" tabindex="2">О проекте</a>
                         </li>
                         <li class="site-list__item">
-                            <a href="" class="site-list__link">Онлайн-курсы</a>
+                            <a href="" class="site-list__link" tabindex="3">Онлайн-курсы</a>
                         </li>
                         <li class="site-list__item">
-                            <a href="" class="site-list__link">Статьи</a>
+                            <a href="" class="site-list__link" tabindex="4">Статьи</a>
                         </li>
                     </ul>
                     <ul class="nav-main__user-list user-list">
                         <li class="user-list__item">
-                            <a href="" class="user-list__link">Регистрация</a>
+                            <a href="" class="user-list__link" tabindex="6">Регистрация</a>
                         </li>
                         <li class="user-list__item">
-                            <a href="" class="user-list__link">Вход</a>
+                            <a href="" class="user-list__link" tabindex="7">Вход</a>
                         </li>
                     </ul>
                     <div class="nav-main__teachers teachers">
-                        <a href="" class="teachers__link">Преподавателям</a>
+                        <a href="" class="teachers__link" tabindex="5">Преподавателям</a>
                     </div>
                 </div>
             </nav>
-            <div class="wrapper wrapper--heading-main nav-main__wrapper-heading-main">
-                <h1 class="nav-main__heading-main heading-main">
+            <div class="wrapper header-main__wrapper header-main__wrapper--heading-main">
+                <h1 class="header-main__heading-main heading-main">
                     <span class="heading-main--orange">Первая</span>&nbsp;образовательная онлайн-платформа, созданная преподами!
                 </h1>
                 <div class="header-main__goods-description goods-description">
-                    <p class="goods-description__text">Описание&nbsp;уникального&nbsp;торгового&nbsp;предложения или&nbsp;же&nbsp;описание названия того или иного продукта, который на первом экране</p>
+                    <p class="goods-description__text">Описание&nbsp;уникального&nbsp;торгового&nbsp;предложения или же описание названия того или иного продукта, который на первом экране</p>
                 </div>
-                <a href="" class="header-main__register-link register-link">Зарегистрироваться
+                <a href="" class="header-main__register-link register-link" tabindex="8">Зарегистрироваться
                 </a>
             </div>
         
@@ -76,21 +74,23 @@
         <div class="wrapper wrapper--programms">
             <h2 class="programms__subheading">ВЫБЕРИ СВОЮ ПРОГРАММУ</h2>
         </div>
-        <div class="programms__counter counter"></div>
+        <div class="programms__counter">199 преподавателей уже работает на сайте</div> <!-- This may me a block, i'm not 100% sure -->
         <div class="programms__slider">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide programms__slide" style="background-image:url(img/tipok.jpg)">
-                    <span class="programms__background">
-                        <div class="programms__name">Школьная программа</div>
-                    </span>
+                  <div class="swiper-slide" style="background-image: url(img/boy.jpg)">
+                    <a href="" class="programms-link">
+                        <span class="programms__background">
+                            <div class="programms__name">Школьная программа</div>
+                        </span>
+                    </a>
                 </div>
-                  <div class="swiper-slide programms__slide" style="background-image:url(img/devushka.jpg)">
+                  <div class="swiper-slide" style="background-image: url(img/girl.jpg)">
                     <span class="programms__background">
                         <div class="programms__name">Студенческая программа</div>
                     </span>
                 </div>
-                  <div class="swiper-slide programms__slide" style="background-image:url(img/paren.jpg)">
+                  <div class="swiper-slide programms__slide" style="background-image: url(img/paren.jpg)">
                     <span class="programms__background">
                         <div class="programms__name">Дополнительное образование</div>
                     </span>

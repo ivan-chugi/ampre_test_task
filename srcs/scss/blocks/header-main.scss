@@ -2,7 +2,7 @@
     margin-bottom: 55px;
 
     width: 100%;
-    background-image: url(../../img/background.jpg);
+    background-image: url("../img/background.jpg");
     background-position-x: 65%;
     background-repeat: no-repeat;
     background-size: auto;
@@ -32,13 +32,14 @@
 
     position: relative;
 
-    // flex-direction: row;
-    // flex-wrap: wrap;
-    // justify-content: space-between;
+    
+    &--heading-main {
+        padding-top: 0;
+        margin-bottom: 0;
 
-    // &--vertical {
-    //     flex-direction: column;
-    // }
+        justify-content: center;
+        flex-direction: column;
+    }
 }
 
 .header-main__contacts {
@@ -51,10 +52,70 @@
     margin-right: 30px;
 }
 
+.header-main__heading-main {
+    margin-bottom: 42px;
+    margin-top: -5px;
+    margin-left: 9px;
+}
+
 .header-main__goods-description {
     margin-bottom: 65px;
 }
 
 .header-main__register-link {
     margin-bottom: 60px;
+}
+
+@media (min-width: $tablet-width) {
+    .header-main {
+        margin-bottom: 111px;
+        padding-bottom: 137px;
+
+        // background-position-x: 20px;
+        background-position-y: -10px;
+        background-size: cover;
+        // background-size: 100%;
+
+        &::before {
+            content: "";
+            width: 24px;
+            height: 39px;
+
+            position: absolute;
+            bottom: 52px;
+            left: 50%;
+
+            background-image: url("../img/mouse-icon.png");
+
+            transform: translateX(-12px);
+        }
+    }
+
+    .header-main__contacts {
+        margin-top: 42px;
+        margin-left: 33px;
+    }
+
+    .header-main__wrapper {
+
+        &--heading-main {
+            margin-bottom: 37px;
+            margin-top: 0;
+            padding-left: 470px;
+        }
+    }
+    .header-main__heading-main {
+        margin-bottom: 37px;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .header-main__goods-description {
+        margin-bottom: 39px;
+        padding-left: 106px;
+    }
+
+    .header-main__register-link {
+        margin-left: 106px;
+    }
 }

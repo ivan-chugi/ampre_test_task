@@ -2,11 +2,11 @@
     // z-index: 1;
 }
 
-.contacts-list {
+.contacts__list {
     @include list-reset;
 }
 
-.contacts-list__item {
+.contacts__list-item {
     font-family: "Montserrat", "Arial", sans-serif;
     font-size: 14px;
     font-weight: 100;
@@ -18,9 +18,31 @@
 }
 
 @media (min-width: $tablet-width) {
-    .contacts-list__item {
+    .contacts__list {
+        width: 216px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .contacts__list-item {
         &--icon-phone {
             display: block;
+
+            position: relative;
+
+            &::before {
+                content: "";
+                width: 14px;
+                height: 14px;
+
+                position: absolute;
+                top: 5px;
+                left: -17px;
+
+                background-image: url(../../img/telefon-icon.png);
+            }
         }
     }
 }

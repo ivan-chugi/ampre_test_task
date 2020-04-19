@@ -15,11 +15,6 @@
         flex-direction: column;
     }
 
-    &--heading-main {
-        justify-content: center;
-        flex-direction: column;
-    }
-
     &--programms {
         justify-content: center;
     }
@@ -32,7 +27,8 @@
 
         &--header {
             justify-content: flex-start;
-            // position: ;
         }
+
+
     }
 }

@@ -22,4 +22,48 @@
 
 .user-list__link {
     @include link-reset;
+    outline: none;
+
+    &:hover {
+        opacity: 0.6;
+    }
+
+    &:active, &:focus {
+        opacity: 0.3;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .user-list {
+        width: 164px;
+        height: 111px;
+        padding-left:  28px;
+
+        position: absolute;
+        right: -35px;
+        top: 59px;
+
+        justify-content: center;
+        align-items: flex-start;
+
+        font-size: 14px;
+        color: rgba(0, 0, 0, 1);
+        font-weight: 500;
+
+        transition: all 300ms ease-in-out;
+        visibility: hidden;
+        opacity: 0;      
+        background-color: $white;
+        border-radius: 10px 0 10px 10px;
+    }
+
+    .user-list__item {
+        margin: 0;
+        margin-bottom: 9px;
+
+        &:last-child {
+            margin-left: 0;
+            margin-bottom: 0;
+        }
+    }
 }

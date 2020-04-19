@@ -14,3 +14,15 @@
         color: $orange;
     }
 }
+
+@media (min-width: $tablet-width) {
+    .heading-main {
+        width: 520px;
+
+        font-size: 36px;
+        line-height: 42px;
+        text-align: left;
+        letter-spacing: 0.68px;
+    }
+
+}

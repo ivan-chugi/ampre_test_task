@@ -2,7 +2,7 @@
     width: 39px;
     height: 26px;
 
-    // transition: all 300ms ease-in-out;
+    z-index: 2000;
 
     position: relative;
 }
@@ -71,6 +71,11 @@
 @media (min-width: $tablet-width) {
     .toggle-nav {
         position: absolute;
-        right: 0;
+        top: 20px;
+        right: 6px;
     }
+
+    // .toggle-nav__checkbox:focus + span {
+    //         opacity: 0.6;
+    // }
 }

@@ -3,11 +3,12 @@
     width: 100%;
 
     position: absolute;
-    // top: 0;
+	top: -127%;
+    left: 0px;
+    z-index: 1000;
+
     background-color: $mob-back;
     transition: all 300ms ease-in-out;
-	top: -100%;
-	left: 0px;
 
     color: $white;
 }
@@ -24,23 +25,43 @@
     align-items: center;
 }
 
-.nav-main__heading-main {
-    margin-bottom: 42px;
-    margin-top: -5px;
-    margin-left: 9px;
-}
-
 .nav-main__teachers {
     margin-bottom: 32px;
 }
 
 @media (min-width: $tablet-width) {
     .nav-main {
-        position: absolute;
-        width: 400px;
-        height: 400px;
-        left: 300px;
-        top: 200px;
+        width: 100%;
+        height: 50px;
+        padding: 0;
+        margin-bottom: 9px;
+
+        position: unset;
+       
+        transition: none;
         background-color: unset;
+    }
+
+    .nav-main__wrapper {
+        width: 650px;
+        padding-left: 48px;
+
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+        position: relative;
+        left: 111px;
+        top: -127px;
+    }
+
+    .nav-main__site-list {
+        margin-left: 81px;
+        margin-bottom: 48px;
+    }
+
+    .nav-main__teachers {
+        position: absolute;
+        top: -7px;
+        right: 37px;
     }
 }

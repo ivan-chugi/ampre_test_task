@@ -1,10 +1,17 @@
 .logo {
+    width: 88px;
+    height: 88px;
+
     position: absolute;
     left: 50%;
     transform: translateX(-44px);
-    z-index: 10;
+    z-index: 2000;
 
-    &:hover {
+    background-image: url("../img/logo-mob.png");
+    background-repeat: no-repeat;
+    outline: 2px white;
+
+    &:hover, &:focus {
         opacity: 0.6;
     }
 
@@ -19,8 +26,20 @@
     }
 }
 
+.logo__link {
+    // width: 100px;
+    // height: 100px;
+
+    // position: absolute;
+}
+
 @media (min-width: $tablet-width) {
     .logo {
+        width: 108px;
+        height: 108px;
+
+        background-image: url("../img/logo-tab.png");
+
         position: unset;
         transform: none;
         order: -3;
