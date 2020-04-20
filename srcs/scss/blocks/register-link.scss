@@ -21,23 +21,6 @@
     border-radius: 4px;
     outline: none;
 
-    &:hover, &:focus {
-        background-color: rgba(0, 0, 0, 0);
-    
-        &::before {
-            transition: all 150ms ease-in-out;
-            width: 0%;
-            background-color: rgba(0, 0, 0, 0);
-        }
-
-        &::after {
-            transition: all 150ms ease-in-out;
-            width: 0%;
-            background-color: rgba(0, 0, 0, 0);
-        }
-
-    }
-
     &::before {
         content: "";
         width: 50%;
@@ -68,5 +51,25 @@
     &:active {
         opacity: 0.3;
         transition: all 70ms ease-in-out;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .register-link {
+        &:hover, &:focus {
+            background-color: rgba(0, 0, 0, 0);
+        
+            &::before {
+                transition: all 150ms ease-in-out;
+                width: 0%;
+                background-color: rgba(0, 0, 0, 0);
+            }
+        
+            &::after {
+                transition: all 150ms ease-in-out;
+                width: 0%;
+                background-color: rgba(0, 0, 0, 0);
+            }
+        }
     }
 }
