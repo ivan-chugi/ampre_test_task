@@ -121,6 +121,7 @@
 
 @media (min-width: $desktop-width) {
     .header-main {
+        margin-bottom: 0;
         padding-bottom: 208px;
 
         scroll-snap-align: start;
