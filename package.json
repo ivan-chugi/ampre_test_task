@@ -14,12 +14,14 @@
   },
   "dependencies": {
     "autoprefixer": "^9.7.6",
+    "clean-css": "^4.2.3",
     "gulp-minify-css": "^1.2.4",
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
     "jquery": "^3.5.0",
+    "lodash.template": "^4.5.0",
     "plumber": "^0.4.8",
     "swiper": "^5.3.7"
   }
