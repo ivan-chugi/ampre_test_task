@@ -26,8 +26,8 @@ const enableSwiper = function() {
         }
     });
  };
- breakpoint.addListener(breakpointChecker);
- breakpointChecker();
+breakpoint.addListener(breakpointChecker);
+breakpointChecker();
 
 let burger = document.querySelector(".toggle-nav__checkbox");
 let menu = document.querySelector(".nav-main");
