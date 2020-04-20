@@ -32,7 +32,7 @@ const enableSwiper = function() {
 let burger = document.querySelector(".toggle-nav__checkbox");
 let menu = document.querySelector(".nav-main");
 let user_list = document.querySelector(".nav-main__user-list");
-let delay = 600;
+let delay = 100;
 
 burger.addEventListener("change", function() {
     if (this.checked && (window.innerWidth < 1024)) {
@@ -42,7 +42,6 @@ burger.addEventListener("change", function() {
     } else if (this.checked && (window.innerWidth > 1024 && window.innerWidth < 1440)) {
         user_list.style.opacity = "1";
         user_list.style.visibility = "visible";
-
     } else if (!this.checked && (window.innerWidth > 1024 && window.innerWidth < 1440)) {
         user_list.style.opacity = "0";
         setTimeout(function() {
