@@ -145,6 +145,11 @@
 }
 
 @media (min-width: $desktop-width) {
+    .programms {
+        padding-top: 120px;
+
+        scroll-snap-align: start;
+    }
     .programms__counter {
         width: 700px;
         height: 61px;
@@ -154,6 +159,9 @@
         font-size: 20px;
         line-height: 25px;
         font-weight: 600;
+
+
+        scroll-snap-align: start;
     }
 
     .programms__subheading {
