@@ -34,14 +34,20 @@ let menu = document.querySelector(".nav-main");
 let user_list = document.querySelector(".nav-main__user-list");
 let delay = 100;
 
+if (burger.checked) {
+    burger.checked = false;
+}
+
 burger.addEventListener("change", function() {
     if (this.checked && (window.innerWidth < 1024)) {
         menu.style.top = '0';
     } else if (!this.checked && (window.innerWidth < 1024)){
         menu.style.top = '-127%';
     } else if (this.checked && (window.innerWidth > 1024 && window.innerWidth < 1440)) {
+        setTimeout(function() {
+            user_list.style.visibility = "visible";
+        }, delay);
         user_list.style.opacity = "1";
-        user_list.style.visibility = "visible";
     } else if (!this.checked && (window.innerWidth > 1024 && window.innerWidth < 1440)) {
         user_list.style.opacity = "0";
         setTimeout(function() {

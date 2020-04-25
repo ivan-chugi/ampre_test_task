@@ -1,6 +1,7 @@
 .register-link {
     width: 304px;
     height: 40px;
+    padding-bottom: 3px;
 
     font-family: "Montserrat", "Arial", sans-serif;
     font-size: 12px;
@@ -51,6 +52,14 @@
     &:active {
         opacity: 0.3;
         transition: all 70ms ease-in-out;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .register-link {
+        width: 305px;
+        padding-right: 1px;
+        padding-bottom: 1px;
     }
 }
 

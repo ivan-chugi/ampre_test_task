@@ -3,8 +3,9 @@
 }
 
 .programms__subheading {
-    margin: 0;
     height: 17px;
+    margin: 0;
+    padding-right: 2px;
 
     font-family: "Montserrat", "Arial", sans-serif;
     font-size: 16px;
@@ -42,6 +43,7 @@
 
     &:hover {
         height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
     }
 
     &:hover > div {
@@ -68,12 +70,12 @@
     margin-bottom: 6px;
 
     position: absolute;
-    bottom: 27px;
+    bottom: 25px;
 
     font-family: "Montserrat", "Arial", sans-serif;
     font-size: 18px;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 21px;
     letter-spacing: 0.4px;
     color: $white;
 
@@ -84,11 +86,12 @@
         width: 185px;
         height: 55px;
         position: absolute;
-        bottom: -15px;
+        bottom: -13px;
         left: 50%;
         transform: translateX(-95px);
 
         visibility: hidden;
+
     }
 }
 
@@ -147,14 +150,12 @@
 @media (min-width: $desktop-width) {
     .programms {
         padding-top: 120px;
-
-        scroll-snap-align: start;
     }
     .programms__counter {
         width: 700px;
-        height: 61px;
+        height: 60px;
         margin-bottom: 139px;
-        padding-top: 15px;
+        padding-top: 14px;
 
         font-size: 20px;
         line-height: 25px;
@@ -162,6 +163,8 @@
     }
 
     .programms__subheading {
+        margin-bottom: 2px;
+
         font-size: 30px;
         letter-spacing: 0.6px;
     }

@@ -20,6 +20,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     .contacts__list-item {
@@ -35,7 +36,7 @@
 
                 position: absolute;
                 top: 5px;
-                left: -17px;
+                left: -18px;
 
                 background-image: url("../img/telefon-icon.png");
             }
@@ -46,6 +47,8 @@
 @media (min-width: $desktop-width) {
     .contacts__list {
         width: 256px;
+
+        display: flex;
     }
 
     .contacts__list-item {
@@ -59,9 +62,11 @@
             display: block;
 
             position: relative;
+            top: -1px;
 
             &::before {
-                left: -20px;
+                left: -19px;
+                top: 6px;
             }
         }
     }

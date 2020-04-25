@@ -36,8 +36,9 @@
 @media (min-width: $tablet-width) {
     .user-list {
         width: 164px;
-        height: 111px;
+        min-height: 110px;
         padding-left:  28px;
+        padding-bottom: 1px;
 
         justify-content: center;
         align-items: flex-start;
@@ -46,11 +47,12 @@
         color: rgba(0, 0, 0, 1);
         font-weight: 500;
 
-        transition: all 300ms ease-in-out;
+        transition: all 250ms ease-in-out;
         visibility: hidden;
         opacity: 0;      
         background-color: $white;
         border-radius: 10px 0 10px 10px;
+        z-index: 3000;
     }
 
     .user-list__item {
@@ -66,16 +68,22 @@
 
 @media (min-width: $desktop-width) {
     .user-list {
+        width: 217px;
+        max-height: 140px;
+        overflow: hidden;
+
         font-size: 16px;
         color: $white;
         font-weight: 400;
         letter-spacing: 0;
 
         flex-direction: row;
+        flex-wrap: wrap;
         
         visibility: visible;
         opacity: 1;
         background-color: rgba(0, 0, 0, 0);
+        transition: none;
     }
 
     .user-list__item {
